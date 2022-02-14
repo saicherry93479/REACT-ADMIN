@@ -1,0 +1,118 @@
+.adminTop {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: forestgreen; */
+  display: flex;
+}
+.adminTop_childrenOne {
+  width: 13%;
+  flex-basis: 13%;
+  height: 100vh;
+  /* background-color: yellow; */
+  background-color: rgb(194, 240, 240);
+}
+.adminTop_childrenOne > span {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 65px;
+  /* background-color: red; */
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.adminTop_childrenTwo {
+  width: 20%;
+  flex-basis: 20%;
+  height: 100vh;
+  background-color: rgb(10, 120, 194);
+  /* background-color: blue; */
+}
+.adminTop_childrenTwo > div {
+  /* background-color: rosybrown; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminTop_childrenTwo_link {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 30px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.adminTop_childrenThree {
+  /* flex: auto; */
+  width: 68%;
+}
+.adminTop_childrenTwo_small {
+  display: none;
+  height: 10vh;
+  background-color: white;
+}
+.adminTop_childrenTwo_small_menu {
+  width: 90%;
+  margin: 1vh auto;
+  background-color: white;
+  border-radius: 20px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 1px 1px 43px 5px rgba(133, 128, 128, 0.55);
+  -webkit-box-shadow: 1px 1px 43px 5px rgba(133, 128, 128, 0.55);
+  -moz-box-shadow: 1px 1px 43px 5px rgba(133, 128, 128, 0.55);
+  box-shadow: 1px 1px 4px 1px rgba(133, 128, 128, 0.55) inset;
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(133, 128, 128, 0.55) inset;
+  -moz-box-shadow: 1px 1px 4px 1px rgba(133, 128, 128, 0.55) inset;
+}
+
+@media screen and (max-width: 900px) {
+  .adminTop_childrenOne {
+    width: 15%;
+  }
+  .adminTop_childrenTwo {
+    width: 25%;
+  }
+  .adminTop_childrenTwo_link {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .adminTop {
+    background-color: white;
+    flex-direction: column;
+  }
+  .adminTop_childrenOne {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(10, 120, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .adminTop_childrenOne > span {
+    font-size: 30px;
+    color: white;
+    /* background-color: green; */
+  }
+  .adminTop_childrenTwo {
+    /* order: 3; */
+    display: none;
+  }
+  .adminTop_childrenThree {
+    order: 2;
+    height: 80vh;
+    width: 100%;
+  }
+  .adminTop_childrenTwo_small {
+    order: 3;
+    display: block;
+    height: 10vh;
+    background-color: white;
+    z-index: 100;
+  }
+}

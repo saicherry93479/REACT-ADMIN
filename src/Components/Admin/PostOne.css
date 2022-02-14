@@ -1,0 +1,116 @@
+.postone {
+  /* height: 500px; */
+  width: 300px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.14);
+  border-radius: 10px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 15px;
+  margin-right: 15px;
+  /* overflow-y: hidden; */
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+.bottom_Description {
+  /* height: 100px; */
+  width: 100%;
+  overflow: hidden;
+}
+.bottom_Description > p {
+  width: 90%;
+  margin-left: 5%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.bottom_Bottom {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 50px;
+}
+.bottom_Bottom > div {
+  margin-left: 10%;
+  cursor: pointer;
+}
+.bottom_Bottom > h3 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+  margin-left: 5%;
+}
+.bottom_Top {
+  /* height: 70px; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.bottom_Top > p {
+  font-size: 13px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  /* font-weight: 200;
+  color: rgba(0, 0, 0, 0.14);
+  text-align: center;
+  font-family: var(--font-secondary); */
+}
+.bottom_Top_Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottom_Top_Header > h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--font-primary);
+}
+.bottom_Top_Header > div {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon {
+  width: 40px;
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  .postone {
+    margin-left: 5;
+    justify-content: center;
+    margin-right: 5;
+  }
+  .icon {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 300px) {
+  .postone {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    /* height: 400px; */
+    width: 270px;
+  }
+  .icon {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .postone {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+    /* height: 400px; */
+    width: 200px;
+  }
+}

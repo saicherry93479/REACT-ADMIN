@@ -1,0 +1,52 @@
+.allPosts_Header {
+  height: 10vh;
+  /* background-color: red; */
+}
+.allPosts_Hero {
+  height: 90vh;
+  /* background-color: rgb(95, 49, 49); */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.allPosts_Hero::-webkit-scrollbar {
+  width: 4px;
+  margin-right: 5px;
+}
+.allPosts_Hero::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
+
+  /* border: 3px solid orange; */
+}
+
+.allPosts_Hero::-webkit-scrollbar-track {
+  background-color: #ac9e9e;
+  border-radius: 20px;
+}
+.allPosts_Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allPosts_Header > h2 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  margin-left: 20px;
+}
+.allPosts_Hero_Footer_Cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+}
+@media screen and (max-width: 650px) {
+  .allPosts_Hero {
+    height: 70vh;
+    margin-bottom: 10vh;
+  }
+}
+
+/* ##################spinner ############ */
+

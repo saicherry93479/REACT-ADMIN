@@ -1,0 +1,37 @@
+/* body {
+  background-color: #2e4057;
+  margin: 0;
+} */
+
+.patterns {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #a3457a;
+  font-size: 100px;
+  font-weight: 700;
+  stroke-width: 3;
+
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    /* fill: hsl(189, 87%, 25%);
+     */
+    fill: rgba(70, 47, 6, 0.5);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}

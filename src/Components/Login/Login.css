@@ -1,0 +1,83 @@
+.login {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.login > .loginLeft {
+  flex: 1;
+  flex-basis: 50%;
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login > .loginRight {
+  flex: 1;
+  background-color: #1976d2;
+  flex-basis: 50%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.loginRight > h1 {
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 40px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .login {
+    flex-direction: column;
+  }
+  .login > .loginLeft {
+    flex: 1;
+    flex-basis: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  .login > .loginRight {
+    flex: 1;
+    flex-basis: 100%;
+    background-color: #1976d2;
+  }
+  .loginRight > div {
+    display: none;
+  }
+  .loginRight > h1 {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .login > .loginLeft {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-height: 400px) {
+  .login {
+    overflow-y: scroll;
+    height: 150vh;
+    /* height: fit-content; */
+  }
+  .loginRight > h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .loginLeft {
+    margin-top: 60px;
+  }
+  .login > .loginRight {
+    /* background-color: red; */
+  }
+}
